@@ -1,6 +1,5 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 local dinlendi = false
-local oyuncuid = PlayerPedId()
 local PlayerData = QBCore.Functions.GetPlayerData()
 local hazir = true
 
@@ -20,6 +19,7 @@ end
 
 
 RegisterNetEvent("torpak-yoga:yap", function()
+    local oyuncuid = PlayerPedId()
     if hazir then
         local mat = GetEntityCoords(acilmis)
         print(mat)
